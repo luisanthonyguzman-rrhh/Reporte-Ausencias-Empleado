@@ -14,11 +14,11 @@
    /
     input, button {
       font-size: 20px;
-      padding: 10px;
+      padding: 15px;
       width: 90%;
-      max-width: 320px;
-      margin: 6px auto; 
-    
+      max-width: 350px;
+      margin: 15px auto; 
+      display: block
     }   
  
     .container {
@@ -79,6 +79,16 @@
 .pie-reporte strong {
   display: block;
   margin-top: 12px;
+}
+@media (max-width: 600px) {
+  input, button {
+    width: 100%;  /* Hace que los botones se ajusten al 100% del ancho en pantallas pequeñas */
+    max-width: none; /* Elimina el límite de ancho */
+  }
+
+  table {
+    width: 100%;  /* Asegura que la tabla ocupe el 100% del ancho en móviles */
+  }
 }
 
   </style>
