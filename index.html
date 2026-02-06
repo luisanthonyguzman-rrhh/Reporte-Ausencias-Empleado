@@ -11,7 +11,7 @@
        text-align: center; /* Centrado para elementos pequeños como el logo */
       margin: 0 auto;
       }   
-     /
+     
       input, button {
         font-size: 30px;
         padding: 15px;
@@ -100,8 +100,6 @@
 .pie-reporte strong {
   display: block;
   margin-top: 12px;
-}
-
   }
           /* Esto asegura que el contenido no se desborde y se ajuste correctamente */
         html, body {
@@ -128,10 +126,19 @@
         text-align: center;
         font-weight: bold;
       }
-
-  }
-}
-
+                    /* Texto "Ingrese su código de trabajador" */
+                    .texto-codigo {
+                      font-size: 28px;   /* +3 tamaños */
+                      margin-bottom: 20px;
+                    }
+                    
+                    /* Input del código */
+                    .input-codigo {
+                      font-size: 32px;
+                      padding: 20px;
+                      height: 70px;
+                    }
+                    
   </style>
 </head>
 <body>
@@ -142,9 +149,10 @@
 <!-- PANTALLA 1 -->
 <div id="login" class="pantalla" style="display:block;">
   <h2>Consulta de Ausencias</h2>
-  <p>Ingrese su código de trabajador</p>
+  <p class="texto-codigo">Ingrese su código de trabajador</p>
 
-  <input type="text" id="codigo" placeholder="Código">
+
+  <input type="text" id="codigo" placeholder="Código" class="input-codigo">
   <button onclick="verDetalle()">Aceptar</button>
 
   <p id="error" style="color:red;"></p>
