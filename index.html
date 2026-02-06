@@ -40,7 +40,40 @@ Publicación de ausencias para empleados 2025
     .total {
       font-weight: bold;
       color: #e67300;
-    }
+    } 
+      .encabezado-reporte {
+  margin-bottom: 18px;
+}
+
+.encabezado-reporte h1 {
+  font-size: 18px;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+.encabezado-reporte h2 {
+  font-size: 15px;
+  margin: 2px 0;
+  font-weight: bold;
+}
+
+.encabezado-reporte p {
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.pie-reporte {
+  margin-top: 18px;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.pie-reporte strong {
+  display: block;
+  margin-top: 12px;
+}
+
   </style>
 </head>
 <body>
@@ -58,6 +91,18 @@ Publicación de ausencias para empleados 2025
 
 <!-- PANTALLA 2 -->
 <div id="detalle" class="pantalla">
+  <div class="encabezado-reporte">
+  <h1>REPORTE DE INASISTENCIA PARA CÁLCULO DE UTILIDADES</h1>
+  <h2>PERIODO 2025 – EMPLEADOS</h2>
+
+  <p>
+    Estimado(a) trabajador(a):<br>
+    Ponemos a su disposición el detalle de inasistencias que usted presenta durante
+    el periodo 2025, los cuales no son considerados o computados para el cálculo de
+    utilidades de dicho periodo.
+  </p>
+</div>
+  
   <h2>Detalle de Ausencias</h2>
   <p><i>Días de ausencias del trabajador</i></p>
 
@@ -76,6 +121,19 @@ Publicación de ausencias para empleados 2025
 
   <br>
   <button onclick="volver()">Cerrar / Volver</button>
+  <div class="pie-reporte">
+  <p>
+    En caso de presentar observaciones, se tiene como plazo máximo hasta el
+    <strong>28 de febrero del 2026</strong> para apersonarse a oficinas de Recursos Humanos
+    de lunes a viernes en horario laboral o a través del correo
+    Consulta.TrabajadoresRRHH@glencore.com.pe
+  </p>
+
+  <strong>
+    Atentamente,<br>
+    Superintendencia de Remuneraciones, Compensaciones y Administración de Personal
+  </strong>
+</div>
 </div>
 
 <script>
