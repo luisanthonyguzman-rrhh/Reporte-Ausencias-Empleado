@@ -21,17 +21,21 @@
       display: block
     }   
  
-    .container {
-      max-width: 800px; /* Ancho máximo para PC */
-      margin: 0 auto;
-    }
-          
-     table {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto
-      border-collapse: collapse;
-    }
+      /* Estilo para centrar el contenido de la segunda página (detalle) */
+      #detalle {
+        max-width: 800px;  /* Limita el ancho máximo en pantallas grandes (PC) */
+        margin: 20px auto; /* Centra el contenido y agrega un margen superior */
+        padding: 20px;     /* Añade espacio dentro del contenedor */
+      }
+      
+      /* Aseguramos que la tabla y otros elementos dentro de #detalle se centren */
+      table {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px auto;  /* Centrado de la tabla */
+        border-collapse: collapse;
+      }
+
     th, td {
       border: 1px solid #999;
       padding: 8px;
