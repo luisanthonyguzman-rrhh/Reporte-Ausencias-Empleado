@@ -170,13 +170,15 @@
 <div id="login" class="pantalla" style="display:block;">
   <h2>Consulta de Ausencias</h2>
   <p class="texto-codigo">Ingrese su código de trabajador</p>
-   <input type="text" id="codigo" placeholder="Código"
-           class="input-codigo"
-           maxlength="5"
-           inputmode="numeric"
-           oninput="validarNumero()">
-  
-    <button onclick="verDetalle()">Aceptar</button>
+   <div class="bloque-login">
+  <input type="text" id="codigo" placeholder="Código"
+         class="input-codigo"
+         maxlength="5"
+         inputmode="numeric"
+         oninput="validarNumero()">
+  <button onclick="verDetalle()">Aceptar</button>
+</div>
+
   <p id="error" style="color:red;"></p>
 </div>
 
