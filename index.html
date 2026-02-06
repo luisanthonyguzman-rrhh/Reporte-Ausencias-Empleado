@@ -89,7 +89,27 @@
     width: 100%;  /* Hace que los botones se ajusten al 100% del ancho en pantallas pequeñas */
     max-width: none; /* Elimina el límite de ancho */
   }
-  
+          /* Esto asegura que el contenido no se desborde y se ajuste correctamente */
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          box-sizing: border-box; /* Evita que el contenido se expanda más allá de la pantalla */
+        }
+        
+        body {
+          overflow-x: hidden; /* Evita que el contenido se desborde en el eje X */
+          -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en iOS */
+        }
+        
+        /* Asegúrate de que el contenedor de la página también se ajuste correctamente */
+        .container {
+          max-width: 800px; /* Limita el ancho máximo para PC */
+          margin: 0 auto;
+          padding: 20px;
+        }
+
   }
 }
 
